@@ -8,7 +8,7 @@ class Home extends BaseController{
 	//--------------------------------------------------------------------
 	public function show(){
 		$data['nama'] = 'Noval Aditya Marlon';
-		$data['jurusan'] = 'Ilmu Komputer';
+		$data['npm'] = '1817051019';
 
 		echo view('mahasiswa/header');
 		echo view('mahasiswa/index', $data);
