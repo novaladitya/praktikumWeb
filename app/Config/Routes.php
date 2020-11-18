@@ -30,7 +30,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::show');
 $routes->get('/mahasiswa', 'Helloworld::show');
 $routes->get('/noval', function(){
 	echo view('mahasiswa/header');
@@ -38,6 +38,14 @@ $routes->get('/noval', function(){
 	echo view('mahasiswa/footer');
 });
 $routes->get('/coba/(:any)/(:num)', 'Helloworld::index/$1/$2');
+$routes->get('/tucil', 'Tucil::login');
+$routes->get('/tucil/register', 'Tucil::register');
+$routes->get('/tucil/home', 'Tucil::home');
+$routes->get('/tucil/admin', 'Tucil::admin');
+$routes->get('/tucil/sendalslipon', 'Tucil::slipon');
+$routes->get('/tucil/sendaljepit', 'Tucil::jepit');
+$routes->get('/tucil/sendalgunung', 'Tucil::gunung');
+$routes->get('/tucil/about', 'Tucil::about');
 
 /**
  * --------------------------------------------------------------------

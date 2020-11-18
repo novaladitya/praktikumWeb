@@ -5,8 +5,8 @@
 		<td>NPM</td>
 	</tr>
 	<tr>
-		<!-- <td><?= $nama ?></td>
-		<td><?= $npm ?></td> -->
+		<td><?= $nama ?></td>
+		<td><?= $npm ?></td>
 		<td>Noval Aditya Marlon</td>
 		<td>1817051019</td>
 	</tr>
